@@ -2,7 +2,7 @@ import { Todo } from "./types";
 
 export const getAllTodos =async ():Promise<Todo[]>=>{
     const res= await fetch (`http://localhost:3001/tasks`,{
-        cache:"no-store",//ssr
+        cache:"no-store",//SSR
         });
     const todos =res.json();
 
