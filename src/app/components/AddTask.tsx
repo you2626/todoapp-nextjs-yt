@@ -2,6 +2,7 @@
 
 import { addTodo } from '@/api';
 import React, { ChangeEvent, FormEvent, useState } from 'react';
+import {v4 as uuidv4} from "uuid";
 
 const AddTask = () => {
 
@@ -10,7 +11,7 @@ const AddTask = () => {
   const hadleSubmit = async (e:FormEvent)=>{
     e.preventDefault();
 
-    await addTodo({id:"4",text: taskTitle})
+    await addTodo({id: uuidv4(),text: taskTitle})
 
     setTaskTitle("");
   };
