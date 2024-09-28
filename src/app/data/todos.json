@@ -1,8 +1,8 @@
 {
   "tasks": [
     {
-      "id": "1",
-      "text": "散歩"
+      "text": "散歩",
+      "id": "1"
     },
     {
       "id": "2",
@@ -13,12 +13,8 @@
       "text": "ジム"
     },
     {
-      "id": "4",
-      "text": "next.js"
-    },
-    {
-      "id": "9f13385d-b41d-41a5-8e09-df245718e6ae",
-      "text": "TODOアプリ開発"
+      "text": "nextjs13",
+      "id": "eaa1db8a-065a-407d-8f8d-b91ca0fb75a6"
     }
   ]
 }
