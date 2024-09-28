@@ -61,3 +61,14 @@ export const editTodo = async (id:string,newText:string): Promise<Task[]> => {
         return []; // エラー時には空の配列を返す
     }
 };
+export const deleteTodo = async (id:string): Promise<Task> => {
+ const res = await fetch(`http://localhost:3001/tasks/${id}`, {
+            method:"DELETE",
+            headers:{
+                "Content-Type":"application/json",
+            },       
+        });
+        const deleteTodo = res.json();
+        return deleteTodo;
+    
+};
